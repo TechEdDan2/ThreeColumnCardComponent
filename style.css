@@ -1,0 +1,147 @@
+html{
+    /* This is helping with the sticky footer */
+    height: 100%;
+}
+
+/* ---------------------- */
+/*      CSS Variables     */
+/* ---------------------- */
+:root{
+    --bkgBright-orange: hsl(31, 77%, 52%);
+    --bkgDark-cyan: hsl(184, 100%, 22%);
+    --bkgVery-dark-cyan: hsl(179, 100%, 13%);
+    --tranparentWhite: hsla(0, 0%, 100%, 0.658);
+    --veryLightGray: hsl(0, 0%, 95%);
+
+}
+
+body{
+    display: flex;
+    /* This will keep the sticky footer below the main */
+    flex-direction: column;
+    height: 100%;
+    align-content: center;
+    /* Sometimes this messes up the mobile view with the 
+        sticky footer */
+    /* min-height: 100vh; */
+}
+
+/* ---------------------------------  */
+/*      Main Box Component            */
+/* ---------------------------------- */
+main{
+    display: flex;
+    max-width: 900px;
+    align-self: center;
+    /* Removed by using the align-content */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-top: 15%;
+    /* margin-bottom: 25%; */
+    
+}
+
+/* Apply uniform padding to all three cards */
+.card1, .card2, .card3{
+    padding: 3rem;
+}
+
+/* ---------------------------------  */
+/*      Apply Colors Individually     */
+/* ---------------------------------- */
+.card1{
+    background-color: var(--bkgBright-orange);
+}
+
+.card2{
+    background-color: var(--bkgDark-cyan);
+}
+
+.card3{
+    background-color: var(--bkgVery-dark-cyan);
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--veryLightGray);
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--tranparentWhite);
+    line-height: 1.5;
+    
+}
+
+/* ---------------------------------  */
+/*      Anchor Element to Button      */
+/* ---------------------------------- */
+.myButton{
+    text-decoration: none;
+    background-color: var(--veryLightGray);
+    border: 1px solid var(--veryLightGray);
+    border-radius: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    
+}
+
+.button{
+    margin-top: 4.5rem;
+}
+
+.myButton:hover{
+    background-color: transparent;
+    color:var(--tranparentWhite)
+}
+
+/* ---------------------------------  */
+/*      Apply Colors Individually     */
+/* ---------------------------------- */
+.card1 a{
+    color: var(--bkgBright-orange);
+}
+
+.card2 a{
+    color: var(--bkgDark-cyan);
+}
+
+.card3 a{
+    color: var(--bkgVery-dark-cyan);
+}
+
+/* -----------------------------------  */
+/*      Create a simple sticky footer   */
+/* ------------------------------------ */
+footer{
+    margin-top: auto;
+    padding: 0.5rem;
+}
+
+/* Footer Content */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  /* ------------------------------------ */
+  /*    Mobile View ... single column     */
+  /* ------------------------------------ */
+@media(max-width:800px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        max-width: 300px;
+    }
+}
