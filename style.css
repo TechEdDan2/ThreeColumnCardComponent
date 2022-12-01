@@ -49,16 +49,18 @@ main{
 /* ---------------------------------  */
 /*      Apply Colors Individually     */
 /* ---------------------------------- */
-.card1{
+.card1 {
     background-color: var(--bkgBright-orange);
+    border-radius: 2% 0 0 2%;
 }
 
-.card2{
+.card2 {
     background-color: var(--bkgDark-cyan);
 }
 
-.card3{
+.card3 {
     background-color: var(--bkgVery-dark-cyan);
+    border-radius: 0 2% 2% 0;
 }
 
 h2{
