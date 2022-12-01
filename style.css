@@ -146,4 +146,12 @@ footer{
         flex-wrap: nowrap;
         max-width: 300px;
     }
+    /* Round the top and bottom Corners */
+    .card1 {
+        border-radius: 2% 2% 0 0;
+    }
+
+    .card3 {
+        border-radius: 0 0 2% 2%;
+    }
 }
